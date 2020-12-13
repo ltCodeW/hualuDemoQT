@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../resources/QQ图片20201212214956.png</file>
+        <file>../resources/QQ图片20201212215339.png</file>
+        <file>../resources/QQ图片20201212221406.png</file>
+    </qresource>
+</RCC>
