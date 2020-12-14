@@ -19,6 +19,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_selectButton_clicked()
 {
-    selectResultWindow* resultWindow = new  selectResultWindow();
-    resultWindow->show();
+    selectResultWindow* newwin = new selectResultWindow();
+    newwin->setWindowTitle("查询结果");
+    newwin->show();
+
 }

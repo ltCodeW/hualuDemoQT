@@ -882,6 +882,12 @@ debug/mainwindow.o: ../hualuDemoQT/mainwindow.cpp ../hualuDemoQT/mainwindow.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QLabel \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qlabel.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QLineEdit \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qlineedit.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtGui/qtextcursor.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtGui/qtextformat.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtGui/qpen.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtGui/qtextoption.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QMenuBar \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qmenubar.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qmenu.h \
@@ -890,9 +896,13 @@ debug/mainwindow.o: ../hualuDemoQT/mainwindow.cpp ../hualuDemoQT/mainwindow.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QRadioButton \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qradiobutton.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QSlider \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QStatusBar \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qstatusbar.h \
-		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QWidget
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QToolButton \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QWidget \
+		../hualuDemoQT/selectresultwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\hualuDemoQT\mainwindow.cpp
 
 debug/selectresultwindow.o: ../hualuDemoQT/selectresultwindow.cpp ../hualuDemoQT/selectresultwindow.h \
@@ -1040,6 +1050,12 @@ debug/selectresultwindow.o: ../hualuDemoQT/selectresultwindow.cpp ../hualuDemoQT
 		D:/tool/QT/5.9/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QLabel \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qlabel.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QLineEdit \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qlineedit.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtGui/qtextcursor.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtGui/qtextformat.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtGui/qpen.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtGui/qtextoption.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QMenuBar \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qmenubar.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qmenu.h \
@@ -1048,8 +1064,11 @@ debug/selectresultwindow.o: ../hualuDemoQT/selectresultwindow.cpp ../hualuDemoQT
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QRadioButton \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qradiobutton.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QSlider \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QStatusBar \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qstatusbar.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QToolButton \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qtoolbutton.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\selectresultwindow.o ..\hualuDemoQT\selectresultwindow.cpp
 

@@ -6,66 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1676</width>
-    <height>989</height>
+    <width>1604</width>
+    <height>983</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>20</y>
-      <width>971</width>
-      <height>931</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>-590</x>
-       <y>-30</y>
-       <width>1701</width>
-       <height>1021</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>1701</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>1701</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="resources.qrc">:/resources/QQ图片20201212221406.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>1030</x>
-      <y>10</y>
+      <x>1000</x>
+      <y>-10</y>
       <width>581</width>
       <height>931</height>
      </rect>
@@ -97,6 +50,9 @@
       <property name="text">
        <string>实时</string>
       </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="radioButton_2">
       <property name="geometry">
@@ -109,9 +65,6 @@
       </property>
       <property name="text">
        <string>历史数据</string>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
       </property>
      </widget>
      <widget class="QDateTimeEdit" name="dateTimeEdit">
@@ -160,59 +113,781 @@
      <property name="title">
       <string>筛选条件</string>
      </property>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QGroupBox" name="groupBox_4">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>40</y>
-        <width>261</width>
-        <height>22</height>
+        <x>30</x>
+        <y>30</y>
+        <width>461</width>
+        <height>161</height>
        </rect>
       </property>
-      <item>
-       <property name="text">
-        <string>武侯区</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>锦江区</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>青羊区</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>新都区</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>双流区</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>温江区</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>50</y>
-        <width>72</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="text">
+      <property name="title">
        <string>地理范围</string>
       </property>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>72</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>区划</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>261</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>郫都区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>全部</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>金牛区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>成华区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>武侯区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>高新区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>龙泉驿区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>青白江区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>锦江区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>青羊区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>新都区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>双流区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>温江区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>彭州市</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>新津县</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>都江堰区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>简阳市</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>邛崃市</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大邑县</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>蒲江县</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>72</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>城镇</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>70</y>
+         <width>261</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>犀浦镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>全部</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>团结镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>花园镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>唐昌镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>安德镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>三道堰镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>安靖镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红光镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>新民场镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>德源镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>友爱镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>古城镇</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>唐元镇</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>72</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>街道</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_3">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>120</y>
+         <width>261</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>全部</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>合作街道</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>郫筒街道</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>西园街道</string>
+        </property>
+       </item>
+      </widget>
      </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>471</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>19</y>
+         <width>461</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>人车混杂度</string>
+       </property>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>上限</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>171</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="sliderPosition">
+         <number>0</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>30</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>下限</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>70</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>80</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>70</y>
+          <width>171</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>80</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>30</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>%</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>70</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>%</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>130</y>
+         <width>451</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>流量</string>
+       </property>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>72</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_3">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>30</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>50</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>人次 - </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>72</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>每</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_4">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>87</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>分钟</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>小时</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>天</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>月</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_5">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>30</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>300</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>人次  </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>70</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>车次  </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>72</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>每</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_8">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>70</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>320</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_7">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>70</y>
+          <width>87</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>分钟</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>小时</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>天</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>月</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_9">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>70</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>70</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>70</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>车次 - </string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>270</y>
+         <width>471</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>摄像头部署位置</string>
+       </property>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>72</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>115</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>快速路</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_4">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>30</y>
+          <width>71</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>主干道</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_5">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>30</y>
+          <width>71</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>次干道</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_6">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>30</y>
+          <width>71</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>支路</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_7">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>30</y>
+          <width>71</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>全部</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>971</width>
+      <height>931</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>-600</x>
+       <y>0</y>
+       <width>1571</width>
+       <height>931</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/resources/QQ图片20201213161104.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>800</y>
+       <width>47</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
     </widget>
    </widget>
   </widget>
@@ -221,7 +896,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1676</width>
+     <width>1604</width>
      <height>26</height>
     </rect>
    </property>
