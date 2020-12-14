@@ -15,6 +15,11 @@ public:
     explicit selectResultWindow(QWidget *parent = 0);
     ~selectResultWindow();
 
+private slots:
+
+    virtual void keyPressEvent(QKeyEvent *ev);
+    virtual void keyReleaseEvent(QKeyEvent *ev);
+
 private:
     Ui::selectResultWindow *ui;
 };

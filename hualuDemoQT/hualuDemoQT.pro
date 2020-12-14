@@ -41,3 +41,10 @@ FORMS += \
 
 RESOURCES += \
     resources.qrc
+
+DISTFILES += \
+    ../resources/QQ图片20201214110936.png \
+    ../resources/QQ图片20201214110936.png \
+    ../resources/QQ图片20201214110936.png \
+    ../resources/notice.png \
+    ../resources/notice.png

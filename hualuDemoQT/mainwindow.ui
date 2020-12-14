@@ -48,27 +48,14 @@
       <pixmap resource="resources.qrc">:/resources/QQ图片20201212221406.png</pixmap>
      </property>
     </widget>
-    <widget class="QToolButton" name="toolButton">
-     <property name="geometry">
-      <rect>
-       <x>610</x>
-       <y>310</y>
-       <width>47</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>...</string>
-     </property>
-    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>1010</x>
-      <y>10</y>
+      <y>100</y>
       <width>581</width>
-      <height>931</height>
+      <height>881</height>
      </rect>
     </property>
     <property name="title">
@@ -77,8 +64,8 @@
     <widget class="QGroupBox" name="groupBox_2">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>40</y>
+       <x>20</x>
+       <y>20</y>
        <width>511</width>
        <height>121</height>
       </rect>
@@ -149,8 +136,8 @@
     <widget class="QGroupBox" name="groupBox_3">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>170</y>
+       <x>20</x>
+       <y>150</y>
        <width>511</width>
        <height>681</height>
       </rect>
@@ -161,10 +148,10 @@
      <widget class="QGroupBox" name="groupBox_4">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>30</y>
-        <width>461</width>
-        <height>161</height>
+        <width>441</width>
+        <height>121</height>
        </rect>
       </property>
       <property name="title">
@@ -293,11 +280,11 @@
         </property>
        </item>
       </widget>
-      <widget class="QLabel" name="label_4">
+      <widget class="QLabel" name="label_14">
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>70</y>
+         <y>50</y>
          <width>72</width>
          <height>15</height>
         </rect>
@@ -306,11 +293,11 @@
         <string>城镇</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_2">
+      <widget class="QComboBox" name="comboBox_5">
        <property name="geometry">
         <rect>
          <x>80</x>
-         <y>70</y>
+         <y>50</y>
          <width>261</width>
          <height>22</height>
         </rect>
@@ -386,24 +373,11 @@
         </property>
        </item>
       </widget>
-      <widget class="QLabel" name="label_5">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>120</y>
-         <width>72</width>
-         <height>15</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>街道</string>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="comboBox_3">
+      <widget class="QComboBox" name="comboBox_6">
        <property name="geometry">
         <rect>
          <x>80</x>
-         <y>120</y>
+         <y>80</y>
          <width>261</width>
          <height>22</height>
         </rect>
@@ -429,14 +403,27 @@
         </property>
        </item>
       </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>72</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>街道</string>
+       </property>
+      </widget>
      </widget>
      <widget class="QFrame" name="frame_2">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>200</y>
+        <x>0</x>
+        <y>190</y>
         <width>481</width>
-        <height>461</height>
+        <height>471</height>
        </rect>
       </property>
       <property name="frameShape">
@@ -445,125 +432,11 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QGroupBox" name="groupBox_5">
-       <property name="geometry">
-        <rect>
-         <x>-10</x>
-         <y>19</y>
-         <width>461</width>
-         <height>101</height>
-        </rect>
-       </property>
-       <property name="title">
-        <string>人车混杂度</string>
-       </property>
-       <widget class="QLabel" name="label_7">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>30</y>
-          <width>51</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>上限</string>
-        </property>
-       </widget>
-       <widget class="QSlider" name="horizontalSlider">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>30</y>
-          <width>171</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit">
-        <property name="geometry">
-         <rect>
-          <x>260</x>
-          <y>30</y>
-          <width>41</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_9">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>70</y>
-          <width>51</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>下限</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_2">
-        <property name="geometry">
-         <rect>
-          <x>260</x>
-          <y>70</y>
-          <width>41</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QSlider" name="horizontalSlider_2">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>70</y>
-          <width>171</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_6">
-        <property name="geometry">
-         <rect>
-          <x>310</x>
-          <y>30</y>
-          <width>16</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>%</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_17">
-        <property name="geometry">
-         <rect>
-          <x>310</x>
-          <y>70</y>
-          <width>20</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>%</string>
-        </property>
-       </widget>
-      </widget>
       <widget class="QGroupBox" name="groupBox_6">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>130</y>
+         <x>20</x>
+         <y>230</y>
          <width>451</width>
          <height>111</height>
         </rect>
@@ -587,7 +460,7 @@
        <widget class="QLineEdit" name="lineEdit_3">
         <property name="geometry">
          <rect>
-          <x>160</x>
+          <x>190</x>
           <y>30</y>
           <width>41</width>
           <height>21</height>
@@ -600,7 +473,7 @@
        <widget class="QLabel" name="label_10">
         <property name="geometry">
          <rect>
-          <x>210</x>
+          <x>240</x>
           <y>30</y>
           <width>51</width>
           <height>16</height>
@@ -613,10 +486,10 @@
        <widget class="QLabel" name="label_11">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>40</x>
           <y>30</y>
-          <width>72</width>
-          <height>15</height>
+          <width>51</width>
+          <height>16</height>
          </rect>
         </property>
         <property name="text">
@@ -626,7 +499,7 @@
        <widget class="QComboBox" name="comboBox_4">
         <property name="geometry">
          <rect>
-          <x>40</x>
+          <x>70</x>
           <y>30</y>
           <width>87</width>
           <height>22</height>
@@ -656,7 +529,7 @@
        <widget class="QLineEdit" name="lineEdit_5">
         <property name="geometry">
          <rect>
-          <x>270</x>
+          <x>300</x>
           <y>30</y>
           <width>41</width>
           <height>21</height>
@@ -669,7 +542,7 @@
        <widget class="QLabel" name="label_15">
         <property name="geometry">
          <rect>
-          <x>320</x>
+          <x>350</x>
           <y>30</y>
           <width>51</width>
           <height>16</height>
@@ -682,7 +555,7 @@
        <widget class="QLabel" name="label_20">
         <property name="geometry">
          <rect>
-          <x>320</x>
+          <x>350</x>
           <y>70</y>
           <width>51</width>
           <height>16</height>
@@ -695,7 +568,7 @@
        <widget class="QLabel" name="label_21">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>40</x>
           <y>70</y>
           <width>72</width>
           <height>15</height>
@@ -708,7 +581,7 @@
        <widget class="QLineEdit" name="lineEdit_8">
         <property name="geometry">
          <rect>
-          <x>270</x>
+          <x>300</x>
           <y>70</y>
           <width>41</width>
           <height>21</height>
@@ -721,7 +594,7 @@
        <widget class="QComboBox" name="comboBox_7">
         <property name="geometry">
          <rect>
-          <x>40</x>
+          <x>70</x>
           <y>70</y>
           <width>87</width>
           <height>22</height>
@@ -751,7 +624,7 @@
        <widget class="QLineEdit" name="lineEdit_9">
         <property name="geometry">
          <rect>
-          <x>160</x>
+          <x>190</x>
           <y>70</y>
           <width>41</width>
           <height>21</height>
@@ -764,7 +637,7 @@
        <widget class="QLabel" name="label_22">
         <property name="geometry">
          <rect>
-          <x>210</x>
+          <x>240</x>
           <y>70</y>
           <width>51</width>
           <height>16</height>
@@ -778,8 +651,8 @@
       <widget class="QGroupBox" name="groupBox_7">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>270</y>
+         <x>20</x>
+         <y>360</y>
          <width>471</width>
          <height>61</height>
         </rect>
@@ -864,15 +737,838 @@
         <property name="text">
          <string>全部</string>
         </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
        </widget>
+      </widget>
+      <widget class="QFrame" name="frame_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>461</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>车辆拥挤程度</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>20</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>低</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_5">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>20</y>
+          <width>171</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>20</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>高</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_7">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>50</y>
+          <width>451</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_40">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>车辆拥挤程度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_41">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>低</string>
+         </property>
+        </widget>
+        <widget class="QSlider" name="horizontalSlider_7">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_42">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>高</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>461</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_49">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>违规停车比率</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_50">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>20</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>低</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_10">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>20</y>
+          <width>171</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_51">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>20</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>高</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_10">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>50</y>
+          <width>451</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_52">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>车辆拥挤程度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_53">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>低</string>
+         </property>
+        </widget>
+        <widget class="QSlider" name="horizontalSlider_11">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_54">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>高</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_11">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>50</y>
+          <width>451</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_61">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>违规停车比率</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_62">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>低</string>
+         </property>
+        </widget>
+        <widget class="QSlider" name="horizontalSlider_14">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_63">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>高</string>
+         </property>
+        </widget>
+        <widget class="QFrame" name="frame_13">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>50</y>
+           <width>451</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_64">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>车辆拥挤程度</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_65">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>20</y>
+            <width>21</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>低</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="horizontalSlider_15">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>20</y>
+            <width>171</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_66">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>20</y>
+            <width>21</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>高</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_14">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>461</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_67">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>车流往返比率</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_68">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>20</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>低</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="comegoRateSlider">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>20</y>
+          <width>171</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_69">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>20</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>高</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_15">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>50</y>
+          <width>451</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_70">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>车辆拥挤程度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_71">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>低</string>
+         </property>
+        </widget>
+        <widget class="QSlider" name="horizontalSlider_17">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_72">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>高</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_16">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>50</y>
+          <width>451</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_73">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>违规停车比率</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_74">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>低</string>
+         </property>
+        </widget>
+        <widget class="QSlider" name="horizontalSlider_18">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_75">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>20</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>高</string>
+         </property>
+        </widget>
+        <widget class="QFrame" name="frame_17">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>50</y>
+           <width>451</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_76">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>车辆拥挤程度</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_77">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>20</y>
+            <width>21</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>低</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="horizontalSlider_19">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>20</y>
+            <width>171</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_78">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>20</y>
+            <width>21</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>高</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QLineEdit" name="comegoRate">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>20</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>20</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>%</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>461</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>人车混杂度</string>
+      </property>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>上限</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="carpeopleUPSlider">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="carpeopleMixUP">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>下限</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="carpeopleMixDown">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QSlider" name="carpeopleDownSlider">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>70</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>30</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>70</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
       </widget>
      </widget>
     </widget>
     <widget class="QPushButton" name="selectButton">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>880</y>
+       <x>210</x>
+       <y>840</y>
        <width>93</width>
        <height>28</height>
       </rect>
@@ -882,9 +1578,84 @@
      </property>
     </widget>
    </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>40</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>监控摄像头总数</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>10</y>
+       <width>113</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>2424</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>10</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>建议整改区域</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_6">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>10</y>
+       <width>113</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>32</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
    <zorder>frame</zorder>
    <zorder>groupBox</zorder>
    <zorder>label</zorder>
+   <zorder>frame_3</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -895,8 +1666,67 @@
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>用户管理</string>
+    </property>
+    <addaction name="actiondeluser"/>
+    <addaction name="actionmodifyuser"/>
+    <addaction name="actionseletusr"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>摄象头管理</string>
+    </property>
+    <addaction name="actiondatamanage"/>
+    <addaction name="actioncamaermanage"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>系统维护</string>
+    </property>
+    <addaction name="actiondatamanage_2"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionadduser">
+   <property name="text">
+    <string>增加用户</string>
+   </property>
+  </action>
+  <action name="actiondeluser">
+   <property name="text">
+    <string>用户管理</string>
+   </property>
+  </action>
+  <action name="actionmodifyuser">
+   <property name="text">
+    <string>修改个人信息</string>
+   </property>
+  </action>
+  <action name="actionseletusr">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actiondatamanage">
+   <property name="text">
+    <string>数据管理</string>
+   </property>
+  </action>
+  <action name="actioncamaermanage">
+   <property name="text">
+    <string>摄像头管理</string>
+   </property>
+  </action>
+  <action name="actiondatamanage_2">
+   <property name="text">
+    <string>数据筛选</string>
+   </property>
+  </action>
  </widget>
  <resources>
   <include location="resources.qrc"/>

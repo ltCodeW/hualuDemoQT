@@ -62,7 +62,11 @@ OBJECTS       = release/main.o \
 		release/moc_mainwindow.o \
 		release/moc_selectresultwindow.o
 
-DIST          =  ..\hualuDemoQT\dialog.h \
+DIST          = ../resources/QQ图片20201214110936.png \
+		../resources/QQ图片20201214110936.png \
+		../resources/QQ图片20201214110936.png \
+		../resources/notice.png \
+		../resources/notice.png ..\hualuDemoQT\dialog.h \
 		..\hualuDemoQT\mainwindow.h \
 		..\hualuDemoQT\selectresultwindow.h ..\hualuDemoQT\main.cpp \
 		..\hualuDemoQT\dialog.cpp \
@@ -111,7 +115,8 @@ compiler_rcc_make_all: release/qrc_resources.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_resources.cpp
 release/qrc_resources.cpp: ../hualuDemoQT/resources.qrc \
-		D:/tool/QT/5.9/mingw53_32/bin/rcc.exe
+		D:/tool/QT/5.9/mingw53_32/bin/rcc.exe \
+		../resources/notice.png
 	D:\tool\QT\5.9\mingw53_32\bin\rcc.exe -name resources ..\hualuDemoQT\resources.qrc -o release\qrc_resources.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -888,9 +893,10 @@ release/mainwindow.o: ../hualuDemoQT/mainwindow.cpp ../hualuDemoQT/mainwindow.h 
 		D:/tool/QT/5.9/mingw53_32/include/QtGui/qtextformat.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtGui/qpen.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtGui/qtextoption.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QMenu \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qmenu.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QMenuBar \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qmenubar.h \
-		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qmenu.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QPushButton \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qpushbutton.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
@@ -899,8 +905,6 @@ release/mainwindow.o: ../hualuDemoQT/mainwindow.cpp ../hualuDemoQT/mainwindow.h 
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QSlider \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QStatusBar \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qstatusbar.h \
-		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QToolButton \
-		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qtoolbutton.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QWidget \
 		../hualuDemoQT/selectresultwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\hualuDemoQT\mainwindow.cpp
@@ -1059,11 +1063,9 @@ release/selectresultwindow.o: ../hualuDemoQT/selectresultwindow.cpp ../hualuDemo
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QMenuBar \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qmenubar.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qmenu.h \
-		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QPushButton \
-		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qpushbutton.h \
-		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QRadioButton \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qradiobutton.h \
+		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QSlider \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/QStatusBar \
 		D:/tool/QT/5.9/mingw53_32/include/QtWidgets/qstatusbar.h \
